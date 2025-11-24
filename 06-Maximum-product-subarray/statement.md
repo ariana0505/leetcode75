@@ -1,36 +1,53 @@
-# 🧩 7. Maximum Product Subarray / Subarreglo con el Producto Máximo
+## Maximum Subarray (English)
 
-## 🇬🇧 English Version
+Given an integer array `nums`, find the subarray with the largest sum and return its sum.
 
-Given an integer array `nums`, find the **contiguous subarray** within the array (containing at least one number) which has the **largest product**.
+### Example 1
+**Input:** `nums = [-2,1,-3,4,-1,2,1,-5,4]`  
+**Output:** `6`  
+**Explanation:** The subarray `[4,-1,2,1]` has the largest sum: `6`.
 
-### 🧠 Example
+### Example 2
+**Input:** `nums = [1]`  
+**Output:** `1`  
+**Explanation:** The subarray `[1]` has the largest sum: `1`.
 
-#### Example 1
-```text
-Input: nums = [2,3,-2,4]
-Output: 6
-Explanation: [2,3] has the largest product 6.
-⚙️ Constraints
-1 <= nums.length <= 2 * 10⁴
+### Example 3
+**Input:** `nums = [5,4,-1,7,8]`  
+**Output:** `23`  
+**Explanation:** The subarray `[5,4,-1,7,8]` has the largest sum: `23`.
 
--10 <= nums[i] <= 10
+### Constraints
+- `1 <= nums.length <= 10^5`
+- `-10^4 <= nums[i] <= 10^4`
 
-The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.
+### Follow-up
+If you have figured out the **O(n)** solution, try coding another solution using the **divide and conquer** approach, which is more subtle.
 
-🇪🇸 Versión en Español
-Dado un arreglo de enteros nums, encuentra el subarreglo contiguo dentro del arreglo (que contenga al menos un número) que tenga el mayor producto.
+---
 
-🧠 Ejemplo
-Ejemplo 1
-text
-Copiar código
-Entrada: nums = [2,3,-2,4]
-Salida: 6
-Explicación: [2,3] tiene el producto más grande, que es 6.
-⚙️ Restricciones
-1 <= nums.length <= 2 * 10⁴
+## Subarreglo de Suma Máxima (Español)
 
--10 <= nums[i] <= 10
+Dado un arreglo de enteros `nums`, encuentra el subarreglo con la suma más grande y devuelve dicha suma.
 
-Se garantiza que el producto de cualquier prefijo o sufijo de nums cabe en un entero de 32 bits.
+### Ejemplo 1
+**Entrada:** `nums = [-2,1,-3,4,-1,2,1,-5,4]`  
+**Salida:** `6`  
+**Explicación:** El subarreglo `[4,-1,2,1]` tiene la suma más grande: `6`.
+
+### Ejemplo 2
+**Entrada:** `nums = [1]`  
+**Salida:** `1`  
+**Explicación:** El subarreglo `[1]` tiene la suma más grande: `1`.
+
+### Ejemplo 3
+**Entrada:** `nums = [5,4,-1,7,8]`  
+**Salida:** `23`  
+**Explicación:** El subarreglo `[5,4,-1,7,8]` tiene la suma más grande: `23`.
+
+### Restricciones
+- `1 <= nums.length <= 10^5`
+- `-10^4 <= nums[i] <= 10^4`
+
+### Follow-up
+Si ya encontraste la solución en **O(n)**, intenta implementar otra usando el método de **divide y vencerás**, que es más sutil.
