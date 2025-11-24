@@ -1,16 +1,14 @@
-from typing import List
+days = [5, 7, 2, 1, 7]
+ganancia = 0
+compra, venta = 0, 1
 
-class Solution:
-    def maxProfit(self, prices: List[int]) -> int:
-        l, r = 0, 1
-        maxP = 0
+while venta < len(days):
+    if days[venta] > days[compra]:  
+        nueva_ganancia = days[venta] - days[compra]
+        ganancia = max(ganancia, nueva_ganancia)
+    else:
+        compra = venta  
 
-        while r < len(prices):
-            if prices[l] < prices[r]:
-                profit = prices[r] - prices[l]
-                maxP = max(maxP, profit)
-            else:
-                l = r
-            r += 1
+    venta += 1
 
-        return maxP
+print(ganancia)
