@@ -4,14 +4,11 @@ maxSub = nums[0]
 sumaActual = 0
 
 for i in range(len(nums)):
-    # Sumamos el valor actual
-    sumaActual += nums[i]
+    sumaActual += nums[i]        # sumamos el valor actual
     
-    # Actualizamos el máximo
-    maxSub = max(maxSub, sumaActual)
-    
-    # Si la suma acumulada cae debajo de 0, la reiniciamos
-    if sumaActual < 0:
+    if sumaActual < 0:           # si la suma cae a negativa, reiniciamos
         sumaActual = 0
+    
+    maxSub = max(maxSub, sumaActual)
 
 print(maxSub)
