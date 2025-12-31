@@ -6,7 +6,7 @@ while l <= r:
     if target == nums[m]:
         print(m)
         break
-    if nums[l] < nums[r]:
+    if nums[l] < nums[m]:
         if nums[l] <=target < nums[m]:
             r = m - 1
         else:
